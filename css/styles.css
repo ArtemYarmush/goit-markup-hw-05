@@ -1,4 +1,5 @@
 :root {
+  --backdrop-bg: rgba(0, 0, 0, 0.2);
   --color-overley-bg: rgba(33, 150, 243, 0.9);
   --transition-hover-focus: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --color-bg-icon: rgba(255, 255, 255, 0.1);
@@ -80,7 +81,7 @@ img {
   color: var(--color-hover-focus);
 }
 
-/*nav*/
+/*nav-----------------------------------------------------------*/
 .nav {
   gap: 50px;
   margin-right: 318px;
@@ -712,6 +713,40 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-text);
 }
-/* .project-item { 
-}*/
 /*footer copy from index.html*/
+/*backdrop---------------------------------------------*/
+.backdrop {
+  top: 0;
+  background: var(--backdrop-bg);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.modal {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  min-height: 581px;
+  background: var(--color-section-title);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-button {
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-footer-logo);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-soc-icon {
+}
