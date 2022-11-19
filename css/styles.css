@@ -182,8 +182,8 @@ img {
   color: var(--color-hover-focus);
 }
 
-/*main*/
-/*section*/
+/*main-----------------------------------------------------------*/
+/*section-------------------------------------------------------*/
 .section {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -199,17 +199,11 @@ img {
   max-width: 1600px;
   margin: 0 auto;
 }
-
 .section-container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-/*.section-list {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}*/
 .section-title {
   text-align: center;
   max-width: 696px;
@@ -242,7 +236,7 @@ img {
 .section-btn:focus {
   background: var(--color-hover-focus);
 }
-/*section-features*/
+/*section-features------------------------------------------------*/
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -283,7 +277,7 @@ img {
   color: var(--color-text);
   letter-spacing: 0.03em;
 }
-/*section-do*/
+/*section-do------------------------------------------------------*/
 .do-container {
   padding-bottom: 94px;
 }
@@ -307,6 +301,27 @@ img {
 .items-box {
   max-width: 100%;
 }
+.do-top {
+  position: relative;
+}
+.do-top-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  font-size: 14px;
+  line-height: 1.1428;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color-section-title);
+}
 .box-one {
   background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
   mix-blend-mode: normal;
@@ -317,7 +332,7 @@ img {
 .box-thre {
   background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
 }
-/*section-team*/
+/*section-team-----------------------------------------------------*/
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -416,7 +431,7 @@ img {
   background: url(2968.jpg);
   border-radius: 0px;
 }
-/*section customers*/
+/*section customers-----------------------------------------------*/
 .customers {
   padding-top: 99px;
   padding-bottom: 94px;
@@ -462,7 +477,7 @@ img {
   transition: fill var(--transition-hover-focus);
   fill: var(--icon-corlor);
 }
-/*footer*/
+/*footer----------------------------------------------------------*/
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
