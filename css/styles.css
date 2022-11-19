@@ -261,8 +261,6 @@ img {
   background: var(--team-background);
   border-radius: 4px;
 }
-.features-icon {
-}
 .features-title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -408,13 +406,13 @@ img {
 .worcker-soc-link:focus {
   background-color: var(--color-hover-focus);
 }
-.worcker-soc-link:hover .worcker-soc-icon,
-.worcker-soc-link:focus .worcker-soc-icon {
-  fill: var(--color-footer-logo);
-}
 .worcker-soc-icon {
   transition: fill var(--transition-hover-focus);
   fill: var(--icon-corlor);
+}
+.worcker-soc-link:hover .worcker-soc-icon,
+.worcker-soc-link:focus .worcker-soc-icon {
+  fill: var(--color-footer-logo);
 }
 .igor {
   background: url(4853.jpg);
@@ -552,7 +550,7 @@ img {
 .address-tel:focus {
   color: var(--color-hover-focus);
 }
-/*section join*/
+/*section join-----------------------------------------*/
 .join {
   padding-top: 12px;
   margin-left: 70px;
@@ -721,10 +719,13 @@ img {
   position: fixed;
   width: 100%;
   height: 100%;
+  transition: opacity var(--transition-hover-focus),
+    visibility var(--transition-hover-focus);
 }
 .modal {
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) translateX(0px);
+  transition: transform var(--transition-hover-focus);
   top: 50%;
   left: 50%;
   width: 528px;
@@ -733,6 +734,9 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) translateX(-600px);
 }
 .modal-button {
   cursor: pointer;
@@ -748,5 +752,8 @@ img {
   background: var(--color-footer-logo);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal-soc-icon {
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }

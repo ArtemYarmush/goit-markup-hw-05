@@ -63,7 +63,9 @@
       <section class="section">
         <div class="container section-container">
           <h1 class="section-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="section-btn" type="button">Замовити послугу</button>
+          <button class="section-btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!--features------------------------------------------------->
@@ -172,7 +174,7 @@
           </ul>
         </div>
       </section>
-      <!--team-->
+      <!--team------------------------------------------->
       <section class="team">
         <div class="container team-container">
           <h2 class="team-title">Наша команда</h2>
@@ -368,7 +370,7 @@
           </ul>
         </div>
       </section>
-      <!--section customers-->
+      <!--section customers---------------------------->
       <section class="customers">
         <div class="container">
           <h2 class="customers-title">Постійні клієнти</h2>
@@ -413,7 +415,7 @@
         </div>
       </section>
     </main>
-    <!--footer-->
+    <!--footer----------------------------------------->
     <footer class="footer">
       <div class="container footer-container">
         <section class="section-addres">
@@ -445,7 +447,7 @@
             </ul>
           </address>
         </section>
-        <!--join-->
+        <!--join----------------------------------->
         <section class="join">
           <h3 class="join-title">приєднуйтесь</h3>
           <ul class="join-soc-list">
@@ -479,14 +481,15 @@
         </section>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-button" type="button">
+        <button class="modal-button" type="button" data-modal-close>
           <svg class="modal-button-icon" width="18" height="18">
             <use href="./images/symbol-defs.svg#icon-vectorx"></use>
           </svg>
         </button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
