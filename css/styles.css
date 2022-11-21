@@ -631,6 +631,7 @@ img {
   margin-right: 8px;
 }
 .btn-filters {
+  border-radius: 4px;
   transition: background var(--transition-hover-focus),
     color var(--transition-hover-focus);
   padding: 6px 22px;
